@@ -47,7 +47,7 @@ if(mm<10) {
     mm='0'+mm
 }
 
-today = dd+'/'+mm+'/'+yyyy;
+today = mm+'/'+dd+'/'+yyyy;
 return today;
 }
 
