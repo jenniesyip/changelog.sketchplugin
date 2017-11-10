@@ -134,7 +134,7 @@ function createChangelog() {
   path.closePath();
   var shape = MSShapeGroup.shapeWithBezierPath(path);
   var fill = shape.style().addStylePartOfType(0);
-  fill.color = MSImmutableColor.colorWithSVGString("#F5F5F6");
+  fill.color = MSImmutableColor.colorWithSVGString("#232E39");
   shape.setName("bg");
 	shape.setIsLocked(true);
   artboard.addLayers([shape]);
@@ -153,7 +153,7 @@ function createChangelog() {
   artboard.addLayers_([changelogTitle]);
 
   var projectTitle = MSTextLayer.alloc().initWithFrame_(NSMakeRect(0, 0, 100, 100));
-  projectTitle.textColor = MSImmutableColor.colorWithSVGString("#858688");
+  projectTitle.textColor = MSImmutableColor.colorWithSVGString("#F7F7F8");
   projectTitle.fontSize = 26;
   projectTitle.setFontPostscriptName("Helvetica-Light");
   projectTitle.setName("projectTitle");
@@ -179,7 +179,7 @@ function createChangelog() {
   artboard.addLayers_([lastUpdate]);
 
   var timestamp = MSTextLayer.alloc().initWithFrame_(NSMakeRect(0, 0, 100, 100));
-  timestamp.textColor = MSImmutableColor.colorWithSVGString("#858688");
+  timestamp.textColor = MSImmutableColor.colorWithSVGString("#F7F7F8");
   timestamp.fontSize = 26;
   timestamp.setFontPostscriptName("Helvetica-Light");
   timestamp.setName("Timestamp");
